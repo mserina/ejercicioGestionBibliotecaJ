@@ -6,7 +6,7 @@ public class clienteDto {
 	//Cotroladores 
 	
 
-	String nombre;
+	
 	String apellidos;
 	String fechaDeNacimiento;
 	String DNI;
@@ -100,4 +100,14 @@ public class clienteDto {
 	public clienteDto()
 	{
 	}
+	
+	
+	String nombre;
+	@Override
+	public String toString() {
+		return "[nombre=" + nombre + ", apellidos=" + apellidos + ", fechaDeNacimiento=" + fechaDeNacimiento
+				+ ", DNI=" + DNI + ", correoElectrónico=" + correoElectrónico + ", fechaInicioSuspensión="
+				+ fechaInicioSuspensión + ", fechaFinSuspensión=" + fechaFinSuspensión + ", id=" + id + "]";
+	}
+
 }

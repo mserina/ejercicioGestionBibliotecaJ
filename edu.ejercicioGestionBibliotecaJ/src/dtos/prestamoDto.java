@@ -82,7 +82,7 @@ public class prestamoDto {
 	clienteDto clientes = new clienteDto();
 	librosDto libros = new librosDto(); 
 
-	public prestamoDto(long idPrestamo, long idCliente, long idLibro, LocalDate fechaPrestamo, LocalDate fechaEntrega, String estadoPrestamo)
+	public prestamoDto(long idPrestamo, long idCliente, long idLibro)
 	{
 	    this.idPrestamo = idPrestamo;
 	    this.idCliente = idCliente;

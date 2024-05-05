@@ -5,7 +5,9 @@ public class librosDto {
 	 //Cotroladores 
 	 
 	 String titulo;
-	 String subtitulo;
+	
+
+	String subtitulo;
 	 String autor;
 	 String ISBN;
 	 int numeroEdicion;
@@ -101,5 +103,12 @@ public class librosDto {
 
 
 	 //toString 
+	 @Override
+		public String toString() {
+		 
+			return "[titulo=" + titulo + ", subtitulo=" + subtitulo + ", autor=" + autor + ", ISBN=" + ISBN
+					+ ", numeroEdicion=" + numeroEdicion + ", editorial=" + editorial + ", stock=" + stock + ", id=" + id
+					+ "]";
+		}
 	 
 }

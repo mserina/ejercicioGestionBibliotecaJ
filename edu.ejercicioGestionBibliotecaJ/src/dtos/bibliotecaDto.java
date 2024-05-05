@@ -22,7 +22,7 @@ public class bibliotecaDto {
 		}
 
 		public void setNombreBiblioteca(String nombreBiblioteca) {
-			this.nombreBiblioteca = nombreBiblioteca;
+			this.nombreBiblioteca = nombreBiblioteca;		
 		}
 
 		public String getDireccion() {
@@ -46,4 +46,11 @@ public class bibliotecaDto {
 	 {
 		 
 	 }
+
+	 @Override
+		public String toString() {
+			return "[id=" + id + ", nombreBiblioteca=" + nombreBiblioteca + ", direccion=" + direccion + "]";
+		}
+
+
 }
